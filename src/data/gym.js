@@ -1,5 +1,4 @@
 import {
-  FaArrowDown,
   FaArrowRight,
   FaEnvelope,
   FaImage,
@@ -7,8 +6,6 @@ import {
   FaPhone,
   FaPhoneAlt,
   FaShoppingCart,
-  FaTag,
-  FaUser,
 } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import program1 from "../assets/program3.jpg";
@@ -76,14 +73,11 @@ import testbg from "../assets/BgImgs/GymTest.png"
 import shopbg from "../assets/BgImgs/shopbgimgfree.jpg"
 import contact from "../assets/BgImgs/gymcontct.jpg"
 
+// video 
+import fitvideo from "../assets/Videos/fitvideo.mp4"
 
 
 
-
-// Social media
-import Facebook from "../assets/Social/facebook.png";
-import Twitter from "../assets/Social/Twitter.png";
-import Instagram from "../assets/Social/insta.png";
 
 import {
   FaFacebook,
@@ -110,7 +104,7 @@ import youtube from "../assets/Social/youtube.png";
 // import { label, link, style, text } from "framer-motion/client";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ShopComponents from "../Components/Shop/ShopComponents";
-import { link } from "framer-motion/client";
+import { link, title } from "framer-motion/client";
 import { BsArrowDownCircle } from "react-icons/bs";
 
 const GymData = {
@@ -165,12 +159,9 @@ const GymData = {
   },
 
   video: {
-    id: "UUwmlaDT-hM",
-    title: "Cinematic Fitness Video (Featuring DVTraining)",
-    description:
-      "Stylish cinematic gym/bodybuilding video for your website to make it stand out.",
-    url: "https://www.youtube.com/watch?v=UUwmlaDT-hM",
-    embedUrl: "https://www.youtube.com/embed/UUwmlaDT-hM",
+    title : "Push Past You limit",
+    subtitle : "Transform your body with 'Strength Hub' ",
+    src : fitvideo
   },
 
   program: {

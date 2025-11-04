@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import {Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
@@ -13,6 +14,25 @@ import Cart from "./Components/Shop/Cart";
 
 
 const App = () => {
+
+
+  useEffect(() => {
+    const imageSources = [
+      new URL("./assets/BgImgs/freepicshopbg.jpg", import.meta.url).href,
+      new URL("./assets/BgImgs/gymbg.png", import.meta.url).href,
+      new URL("./assets/BgImgs/gymcntctbg.jpg", import.meta.url).href,
+      new URL("./assets/BgImgs/gymcontct.jpg", import.meta.url).href,
+      new URL("./assets/BgImgs/GymTest.png", import.meta.url).href,
+      new URL("./assets/BgImgs/shopbcg.png", import.meta.url).href,
+      new URL("./assets/BgImgs/shopbgimgfree.jpg", import.meta.url).href,
+    ];
+
+    // Preload each image
+    imageSources.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
 
   return (
@@ -33,6 +53,9 @@ const App = () => {
     </div>
 
     </CartProvider>
+
+
+    
 
   );
 };

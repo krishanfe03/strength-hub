@@ -44,7 +44,7 @@ const Cart = () => {
   const cartTotal = cart.reduce((total, item) => total + item.price, 0);
 
   return (
-    <div className="mt-20 p-6 md:p-8 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 text-white max-w-2xl mx-auto">
+    <div className="mt-12 xs:mt-22 md:mt-2 lg:mt-25 p-6 md:p-8 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 text-white max-w-2xl mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-white border-b border-white/20 pb-4">
         <span className="mr-2">🛒</span> Your Shopping Cart
       </h2>

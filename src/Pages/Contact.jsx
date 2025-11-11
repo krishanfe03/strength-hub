@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       {/* Banner */}
-      <div className="relative bg-no-repeat bg-cover lg:bg-center bg-center w-full h-[300px] lg:h-[620px] lg:mt-[80px] md:h-[500px] sm:h-[300px] mt-15"
+      <div className="relative bg-no-repeat bg-cover lg:bg-center bg-center w-full h-[300px] lg:h-[620px] lg:mt-[80px] md:h-[500px] sm:h-[300px] mt-12"
        style={{ backgroundImage : `url(${data.Contact.main.bgimg})` }}
       >
         <h2

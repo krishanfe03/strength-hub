@@ -24,15 +24,15 @@ const Video = () => {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-20">
           
         
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 px-4 tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-white drop-shadow-lg">
+          <h2 className="text-[14px] sm:text-lg md:text-4xl font-bold mb-4 px-4 tracking-tight">
+            <span className="  bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-white drop-shadow-lg">
               {video.title}
             </span>
           </h2>
           
          
           <div className="max-w-2xl mx-4 backdrop-blur-sm bg-white/10 rounded-xl px-6 py-3 border border-white/20 shadow-lg">
-            <p className="text-lg md:text-xl text-gray-100 leading-relaxed">
+            <p className="text-[10px] sm:text-lg md:text-xl text-gray-100 leading-relaxed">
               {video.subtitle}
             </p>
           </div>

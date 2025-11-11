@@ -276,7 +276,7 @@ const Programs = () => {
                   className="text-justify md:tracking-normal sm:tracking-normal text-gray-200"
                   style={{ textShadow: "2px 2px 2px rgba(0,0,0,0.25)" }}
                 >
-                  {section.content.text}
+                  {section.content.text}5
                 </p>
                 <motion.div
                   className="w-1/12 h-[3px] bg-blue-200 rounded-full lg:mt-8 hover:w-3/12 transition-all duration-700 ease-out cursor-pointer"

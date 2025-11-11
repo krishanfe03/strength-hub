@@ -16,18 +16,19 @@ import cmsoon from "../assets/Cmsoon.webp";
 import heroimg from "../assets/heroimage.png";
 
 // Gallery images
-import g1 from "../assets/GYM/g1.jpg";
-import g2 from "../assets/GYM/g2.jpg";
-import g3 from "../assets/GYM/g3.jpg";
-import g4 from "../assets/GYM/g4.jpg";
-import g5 from "../assets/GYM/g5.jpg";
-import g6 from "../assets/GYM/g6.jpg";
-import g7 from "../assets/GYM/g7.jpg";
-import g8 from "../assets/GYM/g8.jpg";
-import g9 from "../assets/GYM/g9.jpg";
-import g10 from "../assets/GYM/g10.jpg";
-import g11 from "../assets/GYM/g11.jpg";
-import g12 from "../assets/GYM/g12.jpg";
+import g1 from "../assets/GymGallery/g1.webp";
+import g2 from "../assets/GymGallery/g2.webp";
+import g3 from "../assets/GymGallery/g3.webp";
+import g4 from "../assets/GymGallery/g4.webp";
+import g5 from "../assets/GymGallery/g5.webp";
+import g6 from "../assets/GymGallery/g6.webp";
+import g7 from "../assets/GymGallery/g7.webp";
+import g8 from "../assets/GymGallery/g8.webp";
+import g9 from "../assets/GymGallery/g9.webp";
+import g10 from "../assets/GymGallery/g10.webp";
+import g11 from "../assets/GymGallery/g11.webp";
+import g12 from "../assets/GymGallery/g12.webp";
+
 
 
 
@@ -70,8 +71,8 @@ import ck8 from "../assets/Cakes/ck8.webp";
 // import shopbg from "../assets/BgImgs/shopbcg.png"
 import branchbg from "../assets/BgImgs/gymbg.png"
 import testbg from "../assets/BgImgs/GymTest.png"
-import shopbg from "../assets/BgImgs/shopbgimgfree.jpg"
-import contact from "../assets/BgImgs/gymcontct.jpg"
+import shopbg from "../assets/BgImgs/shopbgimgfree.avif"
+import contact from "../assets/BgImgs/gymcontct.avif"
 
 // video 
 import fitvideo from "../assets/Videos/fitvideo.mp4"

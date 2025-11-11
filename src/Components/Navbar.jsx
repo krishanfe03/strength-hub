@@ -12,12 +12,12 @@ const Navbar = () => {
   const { cart } = useContext(CartContext); 
 
   return (
-    <nav className="p-7 flex md:justify-around md:w-full justify-between lg:justify-around items-center md:px-10 sm:w-full fixed top-0 left-0  w-full bg-gradient-to-r from-[#1a0a7d] via-[#4b2e91] to-[#036d82] shadow-lg z-50">
+    <nav className="p-3 xs:p-8 flex md:justify-around md:w-full justify-between lg:justify-around items-center md:px-10 sm:w-full fixed top-0 left-0  w-full bg-gradient-to-r from-[#1a0a7d] via-[#4b2e91] to-[#036d82] shadow-lg z-50">
 
       {/* info div */}
-      <div className="w-full lg:px-33 absolute top-1 lg:left-5 left-1 flex lg:justify-between justify-center gap-[6px] px-6 flex-wrap sm:justify-between  " >
+      <div className="w-full lg:px-33 absolute top-1 lg:left-5 left-1 hidden xs:flex lg:justify-between justify-center gap-[6px] py-0 px-6 flex-wrap sm:justify-between pointer-events-none">
         {/* Phn Mail Address  */}
-        <ul className="flex flex-wrap lg:gap-6 md:gap-4 sm:gap-3 gap-[6px] justify-center  " >
+        <ul className="flex flex-wrap lg:gap-6 md:gap-4 sm:gap-3 gap-[6px] justify-center" >
           {
             data.Footer.contactinof.map((item, index)=> {
               let Icon = item.icon
@@ -61,7 +61,7 @@ const Navbar = () => {
         </Link>
       </motion.div>
 
-      <div className="flex gap-7 md:gap-8 text-[16px] items-center lg:mt-5 sm:mt-3 mt-8 md:mt-5   ">
+      <div className=" flex gap-7 md:gap-8 text-[16px] items-center lg:mt-5 sm:mt-3 mt-8 md:mt-5   ">
         {/* Desktop links */}
         {data.navbar.map((item, index) => {
           const Icon = item.icon;
@@ -82,7 +82,7 @@ const Navbar = () => {
 
 
              {item.name === "Cart" && cart.length > 0 && (
-                  <span className="absolute top-4 right-50 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                  <span className="absolute top-4 right-50 lg:top-[38px] lg:right-47 xl:right-62 md:right-55 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                     {cart.length}
                   </span>
               )}
@@ -116,14 +116,14 @@ const Navbar = () => {
 
         {/* Mobile dropdown toggle */}
         <BsThreeDotsVertical
-          className="md:block lg:hidden cursor-pointer text-xl"
+          className="block lg:hidden cursor-pointer text-xl z-[9999]"
           onClick={() => setToggle(!toggle)}   
         />
 
         {/* Dropdown links */}
         {toggle && (
           <motion.ul
-            className="flex flex-col gap-3 absolute top-16 right-3 cursor-pointer md:hidden"
+            className="flex flex-col gap-3 absolute top-19 sm:top-25 md:top-23 md:right-24 right-6 lg:hidden cursor-pointer"
             initial={{ opacity: 0, x: 50 }} // from right
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 50 }}

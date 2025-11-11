@@ -13,14 +13,14 @@ const Shop = () => {
   }
 
   return (
-    <div className='mt-15' >
+    <div>
 
       <div
-        className='relative w-full h-[240px] mt-[80px] sm:h-[430px] sm:mt-[40px] md:h-[420px] md:mt-[60px] lg:h-[625px] lg:mt-[80px] bg-cover bg-center object-cover  flex flex-col'
+        className='relative w-full h-[220px] mt-[42px] xs:mt-[85px] pt-0 sm:h-[430px] sm:mt-[50px] md:h-[420px] md:mt-[60px] lg:h-[625px] lg:mt-[82px] bg-cover bg-center object-cover  flex flex-col'
         style={{ backgroundImage: `url(${data.shop.shophero.bgimg})` }}
       >
         <div className='absolute top-[17%] sm:top-[20%] md:top-[22%] lg:top-[20%] left-[5%] sm:left-[6%] md:left-[8%] lg:left-[7%] space-y-2 sm:space-y-3 md:space-y-5 lg:space-y-7 max-w-[90%] sm:max-w-[85%] md:max-w-[80%]'>
-          <h2 className='text-[15px] sm:text-2xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-[#371fd4] via-[#6842c3] to-[#0396c3] bg-clip-text text-transparent drop-shadow-lg tracking-wider text-center mx-auto lg:mx-auto md:mx-auto'>
+          <h2 className='text-[15px] sm:text-[21px] md:text-2xl lg:text-5xl font-bold bg-gradient-to-b from-[#371fd4] via-[#6842c3] to-[#0396c3] bg-clip-text text-transparent drop-shadow-lg tracking-wider text-center mx-auto lg:mx-auto md:mx-auto'>
             {
               data.shop.shophero.heading.map((part, index) => {
                 return (
